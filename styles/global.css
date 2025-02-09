@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--shape-background);
+}
+
 :root{
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;

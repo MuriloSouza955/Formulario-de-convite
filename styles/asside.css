@@ -1,0 +1,32 @@
+.asside-container{
+    margin: 20px;
+    background-image: linear-gradient(rgba(33, 37, 38, 80%), rgba(33, 37, 38, 10%)), url(../assets/Background.png);
+    background-size: cover;
+    width: 400px;
+    height: 728px;
+    border-radius: 12px;
+}
+
+.asside-container {
+    header{
+        padding: 40px;
+        img{
+            width: 46px;
+            height: 48px;
+        }
+
+        h1{
+            font-family: 'Leckerli One', cursive;
+            font-size: 3rem;
+            font-weight: 400;
+            opacity: 0.8;
+            color: var(--pink);
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 100;
+            color: #F9F9F9;
+        }
+    }
+}
