@@ -1,0 +1,18 @@
+.app{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside{
+    overflow: auto;
+
+}
+
+main{ 
+    height: 100vh;
+    overflow: auto;
+    padding: 4rem;
+}

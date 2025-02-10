@@ -1,0 +1,35 @@
+form{
+    margin-top: 3rem;
+    legend{
+        display: flex;
+        font-family: "baloo 2", cursive;
+        font-weight: 600;
+        color: #F9F9F9;
+        font-size: 1.2rem;
+        
+        & img{
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+fieldset{
+    border: none;
+    display: grid;
+}
+
+.inicio-fim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-container{
+    h1{
+        color: #F9F9F9;
+    }
+}
+
+label{
+    display: grid;
+    color: var(--text-body);
+}
