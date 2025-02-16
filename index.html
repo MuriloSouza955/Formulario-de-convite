@@ -35,21 +35,27 @@
                         </div>
                         
                         <div class="Inicio-Fim">
-                            <label for="data">Início</label>
-                            <input type="datetime-local" name="data" id="data" placeholder="Data do evento">
-                            <label for="data">Fim</label>
-                            <input type="datetime-local" name="data" id="data" placeholder="Data do evento">
+                            <div class="Inicio">
+                                <label for="data">Início</label>
+                                <input type="datetime-local" name="data" id="data" placeholder="DD/MM/AAAA, HH:MM">
+                            </div>
+                            <div class="Fim">
+                                <label for="data">Fim</label>
+                                <input type="datetime-local" name="data" id="data" placeholder="DD/MM/AAAA, HH:MM">
+                            </div>
                         </div>
                         
                         <div class="tipo-e-Local-Evento">
                             <label for="tipo-Evento">Tipo</label>
-                            <select name="tipo-Evento" id="tipoEvento">
-                                <option value="1">Presencial</option>
-                                <option value="2">Online</option>
-                            </select>
+                            <radiogroup>
+                                <input type="button" name="tipo-Evento" id="presencial" value="Presencial">
+                                <input type="button" name="tipo-Evento" id="online" value="Online">
+                            </radiogroup>
                             
-                            <label for="local-Evento">Local</label>
-                            <input type="text" name="local-Evento" id="localEvento" placeholder="Link ou Endereço">
+                            <div class="Local">
+                                <label for="local-Evento">Local</label>
+                                <input type="text" name="local-Evento" id="localEvento" placeholder="Link ou Endereço">
+                            </div>
                         </div>
                         
                         <div class="Descrição">

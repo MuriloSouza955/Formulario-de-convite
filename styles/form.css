@@ -1,5 +1,5 @@
 form{
-    margin-top: 3rem;
+    margin-top: 2rem;
     legend{
         display: flex;
         font-family: "baloo 2", cursive;
@@ -18,11 +18,6 @@ fieldset{
     display: grid;
 }
 
-.inicio-fim{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .form-container{
     h1{
         color: #F9F9F9;
@@ -31,5 +26,52 @@ fieldset{
 
 label{
     display: grid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
     color: var(--text-body);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea{
+    border: none;
+    background-color: var(--input-base);
+    color:#C8CDD0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &:focus{
+        outline: none;
+        border: 2px solid #59B2FF;
+    }
+    &::placeholder{
+        color: #777879bb ;
+    }
+}
+
+.tipo-e-Local-Evento{
+    display: flex;
+    gap: 1rem;
+}
+
+.Inicio-Fim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+radiogroup{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--shape-body);
+    border-radius: 5px;
 }
