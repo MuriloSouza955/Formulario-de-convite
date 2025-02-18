@@ -44,7 +44,6 @@ input, textarea{
     padding: 0.5rem;
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 1rem;
 
     &:focus{
         outline: none;
@@ -56,8 +55,25 @@ input, textarea{
 }
 
 .tipo-e-Local-Evento{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+
+    .tipo-Evento{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .local{
+        display: flex;
+    }
+}
+
+checkbox{
+    display: flex;
+    background-color: var(--shape-body);
+    border-radius: 15px;
 }
 
 .Inicio-Fim{
@@ -65,13 +81,4 @@ input, textarea{
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: center;
-}
-
-radiogroup{
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    align-items: center;
-    background-color: var(--shape-body);
-    border-radius: 5px;
 }

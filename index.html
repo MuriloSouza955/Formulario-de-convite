@@ -46,12 +46,14 @@
                         </div>
                         
                         <div class="tipo-e-Local-Evento">
-                            <label for="tipo-Evento">Tipo</label>
-                            <radiogroup>
-                                <input type="button" name="tipo-Evento" id="presencial" value="Presencial">
-                                <input type="button" name="tipo-Evento" id="online" value="Online">
-                            </radiogroup>
-                            
+                            <div class="tipo">
+                                <label for="tipo-Evento">Tipo</label>
+                                <checkbox class="tipo-Evento">
+                                    <input type="button" name="tipo-Evento" id="presencial" value="Presencial" checked>
+                                    <input type="button" name="tipo-Evento" id="online" value="Online">
+                                </checkbox>
+                            </div>
+
                             <div class="Local">
                                 <label for="local-Evento">Local</label>
                                 <input type="text" name="local-Evento" id="localEvento" placeholder="Link ou Endereço">
@@ -60,7 +62,33 @@
                         
                         <div class="Descrição">
                             <label for="descricao">Descrição</label>
-                            <textarea name="descricao" id="descricao" placeholder="Descrição do evento"></textarea>
+                            <textarea name="descricao" id="descricao" placeholder="Descrição do evento" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="personalizacao">
+                        <legend>
+                            <img src="assets/icons/paintbrush-vertical.svg" alt="Paintbrush">
+                            Personalização
+                        </legend>
+                        
+                        <div class="cor-principal">
+                            <legend>Cor principal</legend>
+                            <checkbox>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="azul" color= #59B2FF>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #6A59FF>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #B259FF>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #FF59F9>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #FF598B>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #FF5959>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #FF8B59>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #FFCD59>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #E1FF59>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #59FF91>
+                                <input type="radio" name="cor-principal" id="cor-principal-preto" value="roxo" color= #59FFF9>
+                                
+                            </checkbox>
+                
                         </div>
                     </fieldset>
                 </form>

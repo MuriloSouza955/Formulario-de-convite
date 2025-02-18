@@ -1,0 +1,12 @@
+.personalizacao{
+    margin-top: 3rem;
+}
+
+.cor-principal{
+    legend{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 1.5rem;
+    }
+}
